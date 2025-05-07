@@ -12,9 +12,9 @@ import lombok.RequiredArgsConstructor;
 
 import com.example.chat.chat.MessageType;
 
-/*
+/**
  * WebSocketの切断収量イベントを処理する
- * ユーザの切断を検知してチャットにその情報を通知する 
+ * ユーザの切断を検知してチャットにその情報を通知する
  */
 @Component
 @RequiredArgsConstructor
@@ -22,7 +22,7 @@ public class ConnectionEventListener {
 
     private final SimpMessageSendingOperations messageTemplate;
 
-    /*
+    /**
      * websocketのセッションが切断されると@EventListenerアノテーションによって
      * 呼び出される
      * 
