@@ -3,6 +3,7 @@ var stompClient = null;
 var username = null;
 
 function connect(event) {
+    console.log("aaa");
     username = $("#name").val().trim();
     // Switch page and connect to WebSocket
     if (username) {
